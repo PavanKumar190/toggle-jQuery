@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>JQuery Display Effects</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    // Hide the content
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  
-//   Show the content
-  $("#show").click(function(){
-    $("p").show();
+
+  $("button").click(function(){
+    $("p").toggle();
   });
   
 });
@@ -20,8 +16,7 @@ $(document).ready(function(){
 <body>
 
 <p>If you click on me, I will disappear.</p>
-<button id ="hide">hide</button>
-<button id ="show">show</button>
+<button>Hide or Show</button>
 
 
 </body>
